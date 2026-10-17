@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#16131d">
+    <meta name="description"
+        content="Insyn — protótipo demonstrativo de análise de condição e Diário de Bordo de máquinas de chave. Challenge Motiva, Sprint 2.">
+    <title>Insyn · Manutenção por condição</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="app.js"></script>
+</head>
+
+<body><a class="skip" href="#main">Ir para o conteúdo</a>
+    <aside class="sidebar"><a class="brand" href="#overview" aria-label="Insyn — início">insyn<span>●</span></a>
+        <p class="brand-sub">INTELIGÊNCIA PARA MANUTENÇÃO</p>
+        <div class="workspace"><span class="workspace-icon">M</span>
+            <div>Challenge Motiva<small>Máquinas de chave · S700K</small></div>
+        </div>
+        <nav aria-label="Navegação principal"><a data-nav="overview" href="#overview"><span>▦</span>Visão geral</a><a
+                data-nav="machine" href="#machine/MC-1003"><span>▤</span>Diário da máquina</a><a data-nav="assessment"
+                href="#assessment/MC-1003"><span>＋</span>Avaliação técnica</a></nav>
+        <div class="sidebar-bottom">
+            <div class="sprint">SPRINT 2 <span>PROTÓTIPO</span></div>
+            <p>Da evidência à decisão.<br>Da decisão ao aprendizado.</p><button class="ghost light" id="about">Sobre a
+                demonstração ↗</button><button class="reset" id="reset">Restaurar cenário inicial</button>
+        </div>
+    </aside>
+    <div class="shell">
+        <header class="topbar">
+            <div><span class="breadcrumb">Insyn /</span> <span id="breadcrumb">Visão geral</span></div><span
+                class="team-avatar">IN</span>
+        </header>
+        <div class="demo-banner"><span class="demo-dot"></span><strong>Ambiente demonstrativo</strong><span>Dados
+                fictícios · Sem previsão validada ou conexão com a operação</span></div>
+        <main id="main" tabindex="-1"></main>
+        <footer>Insyn · FIAP Data Science · Challenge Motiva 2026 <span>Decisões operacionais dependem de avaliação
+                técnica.</span></footer>
+    </div>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <dialog id="about-dialog"><button class="close" aria-label="Fechar">×</button><span class="eyebrow">TRANSPARÊNCIA DO
+            PROTÓTIPO</span>
+        <h2>O que você está vendo?</h2>
+        <p>Um fluxo navegável para demonstrar como evidências de condição podem apoiar a priorização de inspeções e
+            formar a memória de cada máquina.</p>
+        <ul>
+            <li>As 8 máquinas, curvas, prioridades e registros são fictícios.</li>
+            <li>Não há modelo preditivo treinado, diagnóstico automático ou integração com ordens de serviço.</li>
+            <li>As avaliações são salvas apenas neste navegador. Não são enviadas à Motiva nem compartilhadas entre
+                dispositivos.</li>
+            <li>Os dados reais recebidos até aqui não incluem histórico suficiente de falhas e intervenções para validar
+                uma previsão.</li>
+        </ul>
+        <h3>O que vem depois?</h3>
+        <p>Validar identidade e unidades dos sinais, receber histórico de inspeções e falhas, definir o evento-alvo e o
+            horizonte e avaliar o modelo em períodos futuros.</p><button class="primary close-button">Entendi</button>
+    </dialog>
+</body>
+
+</html>

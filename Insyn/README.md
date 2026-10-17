@@ -1,7 +1,7 @@
 # Insyn — código-fonte do protótipo da Sprint 2
 
 Este pacote contém o mesmo código da versão demonstrativa criada nesta conversa.
-Os quatro arquivos do site foram colocados na raiz da pasta para facilitar a publicação no GitHub Pages. Não há etapa de instalação de dependências ou de build.
+Os arquivos do site ficam na pasta Insyn/. O index.html na raiz do repositório encaminha os visitantes para essa pasta. Não há etapa de instalação de dependências ou de build.
 
 ## 1. Entender os arquivos
 
@@ -67,7 +67,9 @@ Para o caminho gratuito mais simples, use um repositório público que contenha 
 4. Salve e aguarde a publicação.
 5. Use o endereço mostrado pelo próprio GitHub. Não é necessário contratar um domínio.
 
-O arquivo index.html deve ficar na raiz do repositório, ao lado de app.js, data.js e style.css. Não envie apenas a pasta externa do ZIP deixando os arquivos um nível abaixo.
+Neste repositório, mantenha o index.html de entrada na raiz e os arquivos da aplicação dentro de Insyn/. A página de entrada encaminha para Insyn/, onde estão app.js, data.js e style.css.
+
+Se aparecer 404 na URL principal, confira se o index.html da raiz foi enviado ao GitHub. Também é possível abrir diretamente https://caiorenoldi-byte.github.io/Insyn_Sprint2_Codigo_Fonte/Insyn/. O comando Python da seção 3 serve apenas para acesso local e não publica no GitHub Pages.
 Depois de configurar o Pages, novos pushes para o branch escolhido atualizam a publicação.
 O endereço do GitHub Pages será uma publicação independente do endereço criado nesta conversa; alterações em um não se propagam automaticamente para o outro.
 
